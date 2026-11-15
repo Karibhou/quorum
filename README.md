@@ -13,6 +13,20 @@ Design stage. See the RFC issue for the architecture and phases.
 - [Vexa](https://github.com/Vexa-ai/vexa) (Apache-2.0) joins Teams, Meet and Zoom and produces the transcript. Quorum contributes upstream rather than forking.
 - [joinly](https://github.com/joinly-ai/joinly) (MIT) is the design reference for exposing a meeting as MCP tools.
 
+## Development
+
+Use Node.js 22 (`.nvmrc`) and run `npm ci`. Before submitting changes, run:
+
+```sh
+npm run lint
+npm run typecheck
+npm test
+npm run build
+```
+
+Tests enforce 90% line and branch coverage across `src/`. Use `npm run format`
+to apply Prettier formatting.
+
 ## Contributing
 
 Contributions are welcome under the Developer Certificate of Origin. Sign off every commit with `git commit -s`.
